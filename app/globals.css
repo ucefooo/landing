@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #ab23ff;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #9713e9;
+}
+
+/* Track when scrollbar is in a "pressed" state */
+::-webkit-scrollbar-thumb:active {
+  background-color: #9713e9;
+}
+
+/* Track */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #010811;
+}
+
+.gradient {
+  background: linear-gradient(90deg, #3d8bff 0%, #ab23ff 100%);
+}
+
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* Hide the scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.scrollbar-hide::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.scrollbar-hide::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
